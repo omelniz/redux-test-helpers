@@ -1,0 +1,24 @@
+{
+  "name": "redux-test-helpers",
+  "version": "0.1.0",
+  "description": "Make testing redux great again",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"No test specified\""
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/omelniz/redux-test-helpers.git"
+  },
+  "keywords": [
+    "redux",
+    "jest",
+    "tdd"
+  ],
+  "author": "Alex Omelnitckii <omelniz@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/omelniz/redux-test-helpers/issues"
+  },
+  "homepage": "https://github.com/omelniz/redux-test-helpers#readme"
+}

@@ -5,9 +5,9 @@ Make testing redux great again
 ## Usage
 
 ```js
-it("should toggle loading state", () => {
-  import { testReducer } from "redux-test-helpers";
+import { testReducer } from "redux-test-helpers";
 
+it("should toggle loading state", () => {
   testReducer(reducer)
     .expect(selectLoading, false)
 

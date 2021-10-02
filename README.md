@@ -31,7 +31,7 @@ import { testReducer } from "redux-test-helpers";
 
 and enjoy the magic of chain pattern
 ```js
-it("should toggle loading state", () => {
+it("expect and put example", () => {
   testReducer(reducer)
     .expect(selectLoading, false)
 
@@ -44,5 +44,28 @@ it("should toggle loading state", () => {
     .put(fetchRequest())
     .put(fetchFail())
     .expect(selectLoading, false);
+});
+
+it("applyActions and test helper example", () => {
+  testReducer(reducer)
+    .applyActions([
+      fetchRequest(),
+      fetchFail()
+    ])
+    
+    .test('not a loading state', state => {
+      expect(selectLoading(state)).toBeFalsy()
+    });
+});
+
+
+it("getState example", () => {
+  const testInstance = testReducer(reducer)
+    .applyActions([
+      fetchRequest(),
+      fetchFail()
+    ])
+
+  expect(selectLoading(testInstance.getState()).toBeFalsy()
 });
 ```

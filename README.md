@@ -1,3 +1,5 @@
+![Preview](https://github.com/omelniz/redux-test-helpers/blob/master/redux-test-helpers.png)
+
 # Redux Test Helpers
 
 Make testing redux great again

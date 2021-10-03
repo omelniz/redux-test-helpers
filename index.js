@@ -26,7 +26,11 @@ export function testReducer(reducer, initialState) {
   this.test = function (label, callback) {
     if (!label) throw new Error('Provide label attribute');
 
-    callback(this.state);
+    try {
+      callback(this.state);
+    } catch (error) {
+      throw new Error(`${label}: ${error.message}`);
+    }
     return this;
   };
 
